@@ -6,6 +6,8 @@
 // common behaviors can be defined in .cpp as regular functions within this class (?)
 class Character {
 public:
+    virtual ~Character() = default;
+
     // TODO - define different behavior in derived classes
     virtual void attack(Weapon) = 0;
     virtual void defense() = 0;
