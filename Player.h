@@ -13,10 +13,9 @@ public:
     void getPlayerName();
 
 protected:
-
-
-private:
-
+    void setHealth(int) override;
+    void setMaxHealth(int) override;
+    void setName(string) override;
 };
 
 

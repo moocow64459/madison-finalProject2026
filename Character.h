@@ -10,7 +10,7 @@ public:
     virtual void attack(Weapon) = 0;
     virtual void defense() = 0;
 
-    virtual int takeDamage(int) = 0;
+    virtual int takeDamage(int);
 
     // public getters & protected setters
     virtual int getHealth();
