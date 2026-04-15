@@ -16,6 +16,14 @@ void Character::setMaxHealth(const int maxHealth) {
     this->maxHealth = maxHealth;
 }
 
+string Character::getName() {
+    return this->name;
+}
+
+void Character::setName(string name) {
+    this->name = name;
+}
+
 int Character::takeDamage(const int damage) {
     return currentHealth -= damage;
 }

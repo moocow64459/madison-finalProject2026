@@ -17,11 +17,12 @@ public:
     // public getters & protected setters
     virtual int getHealth();
     virtual int getMaxHealth();
+    virtual string getName();
 
 protected:
-    virtual void setHealth(int) = 0;
-    virtual void setMaxHealth(int) = 0;
-    virtual void setName(string) = 0;
+    virtual void setHealth(int);
+    virtual void setMaxHealth(int);
+    virtual void setName(string);
 
 private:
     // TODO - can this health int be private? how would derived classes interact with it?

@@ -10,7 +10,7 @@ public:
     void attack(Weapon) override;
     void defense() override;
 
-    void getPlayerName();
+    void getName();
 
 protected:
     void setHealth(int) override;
