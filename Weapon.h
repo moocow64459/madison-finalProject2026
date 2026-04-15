@@ -1,4 +1,4 @@
-#ifndef WEAPON_H
+ #ifndef WEAPON_H
 #define WEAPON_H
 #include <string>
 
@@ -8,11 +8,13 @@ class Weapon {
 public:
     Weapon();
 
-    void modifyDamage(int);
-    void modifyDefense(int);
+    void modifyDamage(int) const;
+    void modifyDefense(int) const;
 
 private:
     string name;
+    int damageModifier;
+    int defenseModifier;
 };
 
 
