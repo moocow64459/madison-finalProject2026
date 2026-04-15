@@ -9,7 +9,7 @@ public:
     virtual ~Character() = default;
 
     // TODO - define different behavior in derived classes
-    virtual void attack(Weapon) = 0;
+    virtual void attack(int, const Weapon&) = 0;
     virtual void defense() = 0;
 
     virtual int takeDamage(int);
