@@ -10,21 +10,23 @@ public:
     virtual void attack(Weapon) = 0;
     virtual void defense() = 0;
 
-    virtual int takeDamage(int);
+    virtual int takeDamage(int) = 0;
 
     // public getters & protected setters
     virtual int getHealth();
     virtual int getMaxHealth();
 
 protected:
-    virtual void setHealth(int);
-    virtual void setMaxHealth(int);
+    virtual void setHealth(int) = 0;
+    virtual void setMaxHealth(int) = 0;
+    virtual void setName(string) = 0;
 
 private:
     // TODO - can this health int be private? how would derived classes interact with it?
-    int currentHealth = 100;
-    int maxHealth = 100;
+    int currentHealth = 0;
+    int maxHealth = 0;
 
+    string name;
     Weapon weapon;
 };
 

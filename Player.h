@@ -13,10 +13,10 @@ public:
     void getPlayerName();
 
 protected:
-    void setPlayerName(string);
+
 
 private:
-    string playerName;
+
 };
 
 
