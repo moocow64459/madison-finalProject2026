@@ -6,4 +6,6 @@ set(CMAKE_CXX_STANDARD 20)
 add_executable(madison_finalProject2026 main.cpp
         Character.cpp
         Character.h
+        Weapon.cpp
+        Weapon.h
 )
