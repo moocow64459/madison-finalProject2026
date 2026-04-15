@@ -8,4 +8,8 @@ add_executable(madison_finalProject2026 main.cpp
         Character.h
         Weapon.cpp
         Weapon.h
+        Player.cpp
+        Player.h
+        Enemy.cpp
+        Enemy.h
 )
